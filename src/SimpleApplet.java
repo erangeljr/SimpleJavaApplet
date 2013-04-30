@@ -20,17 +20,17 @@ public class SimpleApplet extends JApplet implements ActionListener{
     
     //Initialize container and components
     public void init() {
-    	Container c = getContentPane();
-    	c.setSize(650, 500);
+    	Container contentPanel = getContentPane();
+    	contentPanel.setSize(650, 500);
 
-    	c.setLayout(new BorderLayout() );
+    	contentPanel.setLayout(new BorderLayout() );
     	for ( int i = 0; i < btnSort.length; i ++ ) {
     		btnSort[i].addActionListener(this);
     		if ( i > 0 )  btnSort[i].setEnabled(false);
     		panSouth.add(btnSort[i]);
     	}
-    	c.add(panSouth, BorderLayout.SOUTH);
-    	c.add(drawingBoard, BorderLayout.CENTER);
+    	contentPanel.add(panSouth, BorderLayout.SOUTH);
+    	contentPanel.add(drawingBoard, BorderLayout.CENTER);
     	drawingBoard.setBackground(Color.black);
     }
     
