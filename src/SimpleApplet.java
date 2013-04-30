@@ -50,12 +50,12 @@ public class SimpleApplet extends JApplet implements ActionListener{
 	}
 	
 	 public static void main( String argv[] ) {
-			JFrame fmObj = new JFrame("Simple Java Applet");
-			fmObj.addWindowListener( new  WindowAdapter() {
+			JFrame frameObject = new JFrame("Simple Java Applet");
+			frameObject.addWindowListener( new  WindowAdapter() {
 			public void windowClosing( WindowEvent e ) { System.exit(0); } } );
-			fmObj.setSize(600, 500);			
-			fmObj.getContentPane();
-			fmObj.setVisible(true);
+			frameObject.setSize(600, 500);			
+			frameObject.getContentPane();
+			frameObject.setVisible(true);
 			
 		   }
 
